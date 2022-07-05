@@ -1,0 +1,19 @@
+body {
+  background-color: aliceblue;
+  font-family: 'Montserrat';
+}
+
+#home-title {
+  font-weight: 600;
+  margin-top: 15rem;
+}
+
+.login {
+  text-align: center;
+}
+
+.btn {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  margin-top: 5px;
+  width: 7rem;
+}
