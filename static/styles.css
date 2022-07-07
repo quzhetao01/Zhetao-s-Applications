@@ -3,12 +3,12 @@ body {
   font-family: 'Montserrat';
 }
 
-#home-title {
+.welcome .title {
   font-weight: 600;
   margin-top: 15rem;
 }
 
-.login {
+.welcome {
   text-align: center;
 }
 
@@ -16,4 +16,22 @@ body {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
   margin-top: 5px;
   width: 7rem;
+}
+
+.title {
+  font-weight: 600;
+}
+
+#usernameInput, #passwordInput {
+  width: 70%;
+}
+
+
+.register, .login { /*register and login divs */
+  margin-left: 12rem;
+}
+
+.btn-google, .btn-facebook, .ms-btn {
+  margin-left: 0.5rem;
+  width: 17rem;
 }
