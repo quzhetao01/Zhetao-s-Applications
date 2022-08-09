@@ -1,3 +1,15 @@
-<%- include ("../partials/header") %>
-Minesweeper123
-<%- include ("../partials/footer") %>
+<%- include ("../partials/applicationsHeader") %><!--  file path follow with respect to the current template -->
+<h1>Minesweeper Game</h1>
+<div class="d-flex justify-content-around">
+
+    <div class="minefield">
+        
+        <% for (let i = 0 ; i < 10 ; i++) { %>
+            <% for (let j = 0 ; j < 10 ; j++) { %>            
+                <div id="<%=i%><%=j%>" class="game-button"></div>
+                <%     } %>
+                <hr>
+                <%  } %>
+    </div>
+</div>
+<%- include ("../partials/applicationsFooter") %>

@@ -1,0 +1,30 @@
+body {
+    background-color: aliceblue;
+    font-family: 'Montserrat';
+  }
+
+
+h1 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.game-button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    border: 3px outset;
+    margin: -1px;
+    /* border-right: gray;
+    border-top: white;
+    border-left: white; */
+    /* border-radius: 20%; */
+    /* box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3); */
+}
+
+hr {
+    border: 0;
+    margin: 0;
+}
+

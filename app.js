@@ -105,7 +105,7 @@ app.get('/auth/facebook/callback',
   });
 
 app.get('/success', function(req, res) {
-    console.log(req);
+    // console.log(req);
     res.set('Cache-Control', 'no-store');
     if (req.isAuthenticated()) {
         res.render('successLogin');
