@@ -9,8 +9,28 @@ h1 {
     margin: 2rem 0;
 }
 
+.logo {
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+}
+
+.how {
+    margin-left: 9%;
+}
+
+.left, .right {
+    margin-top: 1%;
+    line-height: 1.6;
+    text-align: center;
+    width: 20%;
+}
+
+
 .game-button {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 50px;
     height: 50px;
     background-color: lightgray;
@@ -28,3 +48,24 @@ hr {
     margin: 0;
 }
 
+
+/* position:absolute prevents the minesweeper buttons from shifting when clicked on */
+.game-button img { /* for mines */
+    background-color: transparent;
+    display: inline-block;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+}
+
+.game-button span { /* for number */
+    position: absolute;
+}
+
+.clicked {
+    border: inset;
+}
+
+.exploded {
+    background-color: red;
+}

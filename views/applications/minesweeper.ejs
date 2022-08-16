@@ -1,7 +1,26 @@
 <%- include ("../partials/applicationsHeader") %><!--  file path follow with respect to the current template -->
-<h1>Minesweeper Game</h1>
-<div class="d-flex justify-content-around">
+<h1><img class='logo' src="/minesweeper/bomb.png" alt="bomb">Minesweeper Game<img class='logo' src="/minesweeper/bomb.png" alt="bomb"></h1>
+<button class="how"> How to Play </button>
+<div class="d-flex justify-content-around"> <!-- centers the minefield in the middle -->
+    <div class="left">Use the left click button on the mouse to select a space on the grid. If you hit a bomb, you lose. 
+        <br>
+        The numbers on the board represent how many bombs are adjacent to a square. 
+        <br>
 
+        For example, if a square has a "3" on it, then there are 3 bombs next to that square. 
+        <br>
+
+        The bombs could be above, below, right left, or diagonal to the square.
+        <br>
+
+        Avoid all the bombs and expose all the empty spaces to win Minesweeper.
+        <br>
+
+        Tip: Use the numbers to determine where you know a bomb is.
+        <br>
+
+        Tip: You can right click a square with the mouse to place a flag where you think a bomb is. This allows you to avoid that spot.
+    </div>
     <div class="minefield">
         
         <% for (let i = 0 ; i < 10 ; i++) { %>
@@ -11,5 +30,6 @@
                 <hr>
                 <%  } %>
     </div>
+    <div class="right"></div>
 </div>
 <%- include ("../partials/applicationsFooter") %>
