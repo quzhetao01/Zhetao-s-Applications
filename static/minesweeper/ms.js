@@ -1,13 +1,15 @@
 let bombsArray = [];
+let safeTiles = 0;
 for (let i = 0; i < 10; i++) {
     let bombRow = [];
     for (let j = 0; j < 10; j++) {
-        let x = Math.floor(Math.random() * 5)
+        let x = Math.floor(Math.random() * 6)
         if (x === 0) {
             bombRow.push(1);
         }
         else {
             bombRow.push(0);
+            safeTiles++
         }
     }
     bombsArray.push(bombRow);

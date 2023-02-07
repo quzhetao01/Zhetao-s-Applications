@@ -25,7 +25,7 @@ app.use(require('express-session')({
 app.use(passport.initialize()); // intialising passport
 app.use(passport.session()); // configuring passport to make use of session
 
-mongoose.connect("mongodb://localhost:27017/accountsDB");
+mongoose.connect("mongodb://127.0.0.1:27017/accountsDB");
 
 const accountSchema = new mongoose.Schema({
     username: String,
@@ -142,10 +142,10 @@ app.post('/register', function(req, res) {
 
 app.get('/logout', function(req, res, next) {
     req.logout(function(err) {
-      if (err) { return next(err); }
-      res.redirect('/');
-    });
+    if (err) { return next(err); }
+    res.redirect('/');
   });
+});
 
 app.use('/app', applications);
 

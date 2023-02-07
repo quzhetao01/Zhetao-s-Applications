@@ -3,8 +3,23 @@ body {
     font-family: 'Montserrat';
   }
 
+.btn {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 5px;
+    width: 7rem;
+}
 
-h1 {
+.ms-btn {
+    margin-left: 0.5rem;
+    width: 17rem;
+}
+
+.container {
+    padding: 20px 12px;
+}
+
+/* MINESWEEPER GAME */
+.ms-title {
     text-align: center;
     margin: 2rem 0;
 }
